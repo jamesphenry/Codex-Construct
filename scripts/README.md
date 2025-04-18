@@ -1,52 +1,53 @@
-# 🛠 Scripts Folder
+# Codex-Construct
 
-This folder contains PowerShell automation scripts used across the Codex-Construct repo.
+**Tagline**: *Where documented designs (`Codex`) meet implemented C# projects (`Construct`).*
 
-## 📌 Available Scripts
+## Overview
 
-### `setup.ps1`
+`Codex-Construct` is a collection of small-to-medium scoped C#/.NET projects, utilities, and games, with a strong emphasis on **great design**, **test-driven development (TDD)**, and **rock-solid documentation**. This repository serves as a playground for clean, structured development, leveraging best practices in C# design patterns, separation of concerns, and modern .NET workflows.
 
-Initial repository setup. Creates the required folder structure and placeholder files.
+## Purpose
 
-```powershell
-.\scripts\setup.ps1
-```
+This repo aims to document and implement C# projects with clear architecture, using **unit tests** and **Fluent API** design. Each project focuses on solving a specific problem or demonstrating a key design principle in C#/.NET.
 
-# 📏 Conventions
-- Scripts should be written in PowerShell (.ps1)
+## Features
 
-- Must run from the repo root unless otherwise documented
+- TDD-first development with xUnit
+- Fluent API and clean architecture
+- Continuous integration support (each project may have its own configuration)
+- Detailed, GDD/SDD-style project documentation
 
-- Should not modify tracked source unless explicitly stated
+## Getting Started
 
-- Always document new scripts here
+1. **Clone the Repository**  
+   To get started, clone this repo to your local machine:
 
----
+   ```bash
+   git clone https://github.com/jamesphenry/Codex-Construct.git
+   ```
 
-### 📄 `SECURITY.md`
+2. **Set up the environment**  
+   Ensure you have **.NET 8** or later installed.
 
-```markdown
-# 🔐 Security Policy
+## Documentation
 
-## 🛡 Reporting Vulnerabilities
+Each project has its own **GDD/SDD-style documentation** in the `docs/{ProjectName}/` directory. Here's a quick breakdown of the doc structure:
 
-If you discover a security issue or vulnerability, please report it **privately** via email or issue tagging, not as a public GitHub issue.
+- **Overview**: High-level description of the project.
+- **Design**: Architectural decisions, patterns, and technical breakdown.
+- **Features**: Detailed feature list and functionality.
 
-> Email: [secure@codex-construct.fake]  
-> Tag with: `security` label in private issues
+## Contribution Guidelines
 
-We'll coordinate disclosure and patching together.
+We follow the **Git Flow** workflow, with all feature development occurring in isolated branches. For contributing to this repo, please follow these steps:
 
-## 🔒 Scope
+1. Fork the repository.
+2. Create a feature branch (e.g., `feature/your-feature`).
+3. Make your changes, write tests, and document accordingly.
+4. Push your changes and create a pull request.
 
-This applies to:
-- Application code within `projects/`
-- Shared tools/scripts that manipulate or expose data
-- CI/CD workflows
+Please refer to the [CONTRIBUTING.md](./CONTRIBUTING.md) for detailed guidelines.
 
----
+## License
 
-## 🧯 Dependencies
-
-We use `dotnet list package --vulnerable` in CI to scan for known .NET vulnerabilities.  
-Third-party packages are regularly reviewed and locked to stable versions.
+This project is licensed under the MIT License - see the [LICENSE](./LICENSE) file for details.

@@ -1,59 +1,31 @@
-# 🤝 Contributing to Codex-Construct
 
-Thanks for considering a contribution!
+# Contributing to Codex-Construct
 
-## 🔁 Git Flow
+First off, thank you for considering contributing to Codex-Construct! 🎉
 
-We use [Git Flow](https://nvie.com/posts/a-successful-git-branching-model/) for all project work:
+We welcome contributions, whether it's bug fixes, new features, documentation improvements, or anything else that helps the project grow. Here's a quick guide to get you started.
 
-- `main` = stable
-- `develop` = active development
-- `feature/*` = scoped feature branches
+## How to Contribute
 
-Start a feature:
+1. Fork the repository.
+2. Clone your fork locally and switch to a new branch.
+3. Work on your changes in the new branch (using Git Flow).
+4. Test your changes using TDD (xUnit).
+5. Update the documentation if needed.
+6. Create a pull request to merge your changes.
 
-```bash
-git flow feature start your-feature-name
-```
+## Code Style
 
-# 📜 Coding Conventions
-- C# 12 / .NET 8+
+- Follow the existing code style, which includes top-level statements and the `Namespace;` syntax.
+- Test-driven development is essential (xUnit).
+- Use meaningful commit messages.
+- Keep PRs focused on a single feature/bugfix.
 
-- Use top-level statements and Namespace; syntax
+## Documentation
 
-- One class per file
+Before starting development, always ensure documentation is updated. This includes:
+- Project documentation in `docs/{Project}/Overview.md`.
+- Feature-specific documentation in `docs/{Project}/Features/`.
+- Ensure changes in the README and other core docs reflect new contributions.
 
-- Use Fluent API for configuration when practical
-
-- Favor composition over inheritance
-
-# 🧪 Testing
-- Use xUnit only
-
-- Structure tests by behavior, not class
-
-- All tests should pass before PR
-
-- If tests fail, log to testdebug.log
-
-# 📝 Docs
-All features must be documented under docs/{ProjectName}/Features/.
-
-Update:
-
-- README.md
-
-- HISTORY.md
-
-- Any config-related docs if needed
-
-# ✅ Check Before Commit
-- [ ] All tests pass
-
-- [ ] Code is clean and well-named
-
-- [ ] Docs updated
-
-- [ ] PR is to develop, not main
-
-Welcome aboard 🛠️
+Thank you again for contributing to Codex-Construct! Let's build something amazing together! ✨
